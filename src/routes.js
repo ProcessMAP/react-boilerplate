@@ -6,6 +6,7 @@ import { history } from './redux/store';
 import App from './app';
 import Home from './modules/global/pages/home';
 import About from './modules/global/pages/about';
+import Contact from './modules/global/pages/contact';
 import PageNotFound from './modules/global/pages/404';
 
 import DocumentManagement from './modules/document-management/home';
@@ -18,6 +19,7 @@ export default (
 		<Route path="/" component={Home} onUpdate={onUpdate} />
 		<Route path="/home" component={Home} title="Home" onUpdate={onUpdate} />
 		<Route path="/about" component={About} title="Home" onUpdate={onUpdate} />
+		<Route path="/contact" component={Contact} title="Contact Us" onUpdate={onUpdate} />
 		<Route path="/document-management" component={DocumentManagement} title="Document Management" onUpdate={onUpdate} />
 		<Route path="/oops" component={PageNotFound} title="Page Not Found" onUpdate={onUpdate} />
 		<Redirect from='*' to='/oops' />
